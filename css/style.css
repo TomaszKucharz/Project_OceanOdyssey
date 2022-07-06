@@ -1,8 +1,13 @@
 :root {
   --mainBackgorundColor: rgba(255, 255, 255, 0);
   --fontDancing-Script: "Dancing Script", sans-serif;
-  --fontSize: 8vh;
+  --fontMontserrat: "Montserrat", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+  --fontSize: 2vh;
   --border-test: 0.5px dotted rgb(255, 8, 0);
+  --bannerBackgorundColor-White: rgb(255, 255, 255);
+  --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
+  --boxShadow-Grey: 0 0 8px rgb(73, 73, 73);
 }
 * {
   margin: 0;
@@ -33,30 +38,71 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 6vh;
-  background-color: rgba(0, 255, 255, 0.274);
+  font-family: var(--fontMontserrat);
+  background-color: var(--bannerBackgorundColor-White);
   display: inline-flex;
-  justify-content: flex-start;
 }
-.ban {
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  width: 5%;
+}
+.logo:hover {
   cursor: pointer;
-  transition: 0.3s;
+}
+.logo img {
+  transform: scale(0.5);
+}
+.rightButtons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+/*  */
+.ban {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  margin: 0 3vh;
+  border: var(--border-test);
+  cursor: pointer;
+  transition: 0.2s;
 }
 .ban:hover {
   background-color: blanchedalmond;
 }
-/* .logo{} */
+/*  */
 .contactForUs {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10vw;
+  width: 10%;
   height: 100%;
   margin: 0 5vh;
-  border: var(--border-test);
 }
+
 .menuLi {
-  width: 10vw;
+  margin: 0 3vw;
+  width: 10%;
   height: 100%;
-  border: var(--border-test);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/*v tu klasy dla bannera v*/
+.on {
+  height: 6vh;
+  font-size: var(--fontSize);
+}
+.off {
+  height: 4vh;
+  font-size: calc(var(--fontSize) / 1.7);
+  box-shadow: var(--boxShadow-Grey);
+}
+/*^ tu klasy dla bannera^ */
+
+/* .changeColor {
+  background-color: var(--bannerBackgorundColor-Blue);
+} */
