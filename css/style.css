@@ -8,6 +8,7 @@
   --bannerBackgorundColor-White: rgb(255, 255, 255);
   --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
   --boxShadow-Grey: 0 0 8px rgb(73, 73, 73);
+  --colorTextButton:color: rgb(173, 68, 68);
 }
 * {
   margin: 0;
@@ -57,20 +58,21 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-self: center;
 }
 /*  */
 .ban {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
   padding: 0 40px;
   margin: 0 3vh;
-  border: var(--border-test);
+  /* border: var(--border-test); */
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .ban:hover {
-  background-color: blanchedalmond;
+  color: rgb(173, 68, 68);
 }
 /*  */
 .contactForUs {
