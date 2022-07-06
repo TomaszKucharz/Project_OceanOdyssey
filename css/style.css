@@ -1,0 +1,62 @@
+:root {
+  --mainBackgorundColor: rgba(255, 255, 255, 0);
+  --fontDancing-Script: "Dancing Script", sans-serif;
+  --fontSize: 8vh;
+  --border-test: 0.5px dotted rgb(255, 8, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1920px;
+  height: 300vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: hidden;
+  /* border: var(--border-test); */
+}
+.form {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.img {
+  background-repeat: no-repeat;
+}
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6vh;
+  background-color: rgba(0, 255, 255, 0.274);
+  display: inline-flex;
+  justify-content: flex-start;
+}
+.ban {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ban:hover {
+  background-color: blanchedalmond;
+}
+/* .logo{} */
+.contactForUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 100%;
+  margin: 0 5vh;
+  border: var(--border-test);
+}
+.menuLi {
+  width: 10vw;
+  height: 100%;
+  border: var(--border-test);
+}
