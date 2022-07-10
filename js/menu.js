@@ -4,13 +4,19 @@ const menuLi = document.querySelector(`.menuLi`);
 const contact = document.querySelector(`.contactForUs`);
 const bigBtns = [...document.querySelectorAll(`.bigBtn`)];
 
-const handleClik = () => {
+const handleClikYachts = () => {
 	bigBtns.forEach((el) => {
-		el.classList.add('yachtOn');
+		if (el.classList.contains(`yacht`)) {
+			el.classList.toggle(`yachtOn`);
+		} else {
+		}
 	});
 };
+const handleClikDestination = () => {};
 
-yachts.addEventListener(`click`, handleClik);
-destination.addEventListener(`click`, handleClik);
-menuLi.addEventListener(`click`, showMenu);
-contact.addEventListener(`click`, showContact);
+const clearBtns = () => {};
+
+yachts.addEventListener(`click`, handleClikYachts);
+destination.addEventListener(`click`, handleClikDestination);
+// menuLi.addEventListener(`click`, showMenu);
+// contact.addEventListener(`click`, showContact);

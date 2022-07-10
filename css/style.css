@@ -91,24 +91,33 @@
   height: 25vw;
   border: var(--border-test);
   border-radius: 20px;
-  /* background-color: rgba(247, 247, 103, 0.521); */
 }
-.yachtNice{
-  background-color: rgba(243, 241, 145, 0.548);
+.yachtNice, .sunny{
+  background-color: rgb(243, 241, 145);
   top:-25vw;
-  left: 35vw;
-  transition: .3s;
+  left: 34vw;
+  transition: .6s;
 }
 
 
-.yachtAgly{
-   background-color: rgba(189, 103, 247, 0.521);
-   top:-25vw;
+.yachtAgly, .cold{
+  background-color: rgb(189, 103, 247);
+  top:-25vw;
    left: 65vw;
-   transition: .5s;
+   transition: 0.9s;
 }
 .yachtOn{
-  top:25vw;
+  top:50%;
+}
+.clearYachtOn{
+  animation: movebigbtns 0.5s forwards;
+}
+@keyframes movebigbtns {
+  0%{top:50%;}
+  100%{top:50%;
+     left:150%;
+  opacity: 0;}
+  
 }
 /*v tu klasy dla bannera v*/
 .on {
