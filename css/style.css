@@ -98,14 +98,13 @@
   left: 34vw;
   transition: .6s;
 }
-
-
 .yachtAgly, .cold{
   background-color: rgb(189, 103, 247);
   top:-25vw;
    left: 65vw;
    transition: 0.9s;
 }
+
 .yachtOn{
   top:50%;
 }
