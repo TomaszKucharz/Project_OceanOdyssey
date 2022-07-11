@@ -10,7 +10,6 @@ const handleClickYachts = () => {
       el.classList.contains(`destination`) & el.classList.contains(`yachtOn`)
     ) {
       el.classList.add(`clearYachtOn`);
-      yachtX();
       setTimeout(() => {
         el.classList.remove(`yachtOn`, `clearYachtOn`);
       }, 510);
@@ -27,24 +26,9 @@ const handleClickDestination = () => {
     }
     if (el.classList.contains(`yacht`) & el.classList.contains(`yachtOn`)) {
       el.classList.add(`clearYachtOn`);
-      yachtY();
       setTimeout(() => {
         el.classList.remove(`yachtOn`, `clearYachtOn`);
       }, 510);
-    }
-  });
-};
-const yachtX = () => {
-  bigBtns.forEach((el) => {
-    if (el.classList.contains(`yacht`)) {
-      el.classList.add(`yachtOn`);
-    }
-  });
-};
-const yachtY = () => {
-  bigBtns.forEach((el) => {
-    if (el.classList.contains(`destination`)) {
-      el.classList.add(`yachtOn`);
     }
   });
 };
