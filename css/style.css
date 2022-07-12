@@ -1,23 +1,40 @@
-@import "variables_one.css";
-/* :root {
-  --mainBackgorundColor: rgba(255, 255, 255, 0);
+[data-mode="light"] {
+  --mainBackgorundColor: rgb(255, 255, 255);
   --fontDancing-Script: "Dancing Script", sans-serif;
   --fontMontserrat: "Montserrat", sans-serif;
   --fontRoboto: "Roboto", sans-serif;
   --fontSize: 2vh;
   --fontColorBanner: rgb(116, 116, 116);
+  --fontColorBannerHover: #bc6060;
   --fontColorSwitch: rgb(220, 220, 220);
   --border-test: 0.5px dotted rgb(255, 8, 0);
   --border-banner: 0.5px solid rgb(220, 220, 220);
-  --bannerBackgorundColor-White: rgb(255, 255, 255);
+  --bannerBackgorundColor: rgb(255, 255, 255);
   --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
   --boxShadow-Grey: 0 0 8px rgb(73, 73, 73);
-  --colorTextButton:color: rgb(173, 68, 68);
-} */
+}
+[data-mode="dark"] {
+  --mainBackgorundColor: rgb(0, 0, 0);
+  --fontDancing-Script: "Dancing Script", sans-serif;
+  --fontMontserrat: "Montserrat", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+  --fontSize: 2vh;
+  --fontColorBanner: rgb(216, 216, 216);
+  --fontColorBannerHover: #bc6060;
+  --fontColorSwitch: rgb(220, 220, 220);
+  --border-test: 0.5px dotted rgb(255, 8, 0);
+  --border-banner: 0.5px solid rgb(220, 220, 220);
+  --bannerBackgorundColor: rgb(0, 0, 0);
+  --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
+  --boxShadow-Grey: 0 0 8px rgb(153, 56, 56);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: var(--mainBackgorundColor);
 }
 .wrapper {
   max-width: 1920px;
@@ -49,7 +66,7 @@
   left: 0;
   width: 100%;
   font-family: var(--fontMontserrat);
-  background-color: var(--bannerBackgorundColor-White);
+  background-color: var(--bannerBackgorundColor);
   /* border-bottom: var(--border-banner); */
   display: inline-flex;
 }
@@ -75,17 +92,19 @@
   color: var(--fontColorSwitch);
 }
 .fas {
-  align-self: center;
+  position: relative;
+
+  /* align-self: center; */
   transform: scale(0.8);
   padding: 2px;
   cursor: pointer;
 }
-/* .dark{
-  display: block;
-} */
-.light {
+/* .lightOff {
   display: none;
 }
+.lightOn {
+  display: block;
+} */
 .logo:hover {
   cursor: pointer;
 }
@@ -111,7 +130,7 @@
   transition: 0.1s;
 }
 .ban:hover {
-  color: rgb(179, 96, 96);
+  color: var(--fontColorBannerHover);
 }
 .bigBtn {
   position: absolute;
@@ -122,7 +141,7 @@
   width: 12vw;
   height: 20vw;
   border: var(--border-test);
-  background-color: var(--bannerBackgorundColor-White);
+  background-color: var(--bannerBackgorundColor);
   border-radius: 20px;
 }
 .yachtNice,
