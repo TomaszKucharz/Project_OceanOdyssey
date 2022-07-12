@@ -1,0 +1,15 @@
+:root {
+  --mainBackgorundColor: rgba(255, 255, 255, 0);
+  --fontDancing-Script: "Dancing Script", sans-serif;
+  --fontMontserrat: "Montserrat", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+  --fontSize: 2vh;
+  --fontColorBanner: rgb(116, 116, 116);
+  --fontColorSwitch: rgb(220, 220, 220);
+  --border-test: 0.5px dotted rgb(255, 8, 0);
+  --border-banner: 0.5px solid rgb(220, 220, 220);
+  --bannerBackgorundColor-White: rgb(255, 255, 255);
+  --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
+  --boxShadow-Grey: 0 0 8px rgb(73, 73, 73);
+  --colorTextButton:color: rgb(173, 68, 68);
+}

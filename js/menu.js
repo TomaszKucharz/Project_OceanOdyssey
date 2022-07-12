@@ -13,8 +13,7 @@ const handleClickYachts = () => {
       setTimeout(() => {
         el.classList.remove(`yachtOn`, `clearYachtOn`);
       }, 510);
-    }
-    if (el.classList.contains(`yacht`)) {
+    } else if (el.classList.contains(`yacht`)) {
       el.classList.toggle(`yachtOn`);
     }
   });
@@ -23,8 +22,9 @@ const handleClickDestination = () => {
   bigBtns.forEach((el) => {
     if (el.classList.contains(`destination`)) {
       el.classList.toggle(`yachtOn`);
-    }
-    if (el.classList.contains(`yacht`) & el.classList.contains(`yachtOn`)) {
+    } else if (
+      el.classList.contains(`yacht`) & el.classList.contains(`yachtOn`)
+    ) {
       el.classList.add(`clearYachtOn`);
       setTimeout(() => {
         el.classList.remove(`yachtOn`, `clearYachtOn`);

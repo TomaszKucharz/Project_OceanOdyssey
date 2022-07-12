@@ -1,16 +1,19 @@
-:root {
+@import "variables_one.css";
+/* :root {
   --mainBackgorundColor: rgba(255, 255, 255, 0);
   --fontDancing-Script: "Dancing Script", sans-serif;
   --fontMontserrat: "Montserrat", sans-serif;
   --fontRoboto: "Roboto", sans-serif;
   --fontSize: 2vh;
   --fontColorBanner: rgb(116, 116, 116);
+  --fontColorSwitch: rgb(220, 220, 220);
   --border-test: 0.5px dotted rgb(255, 8, 0);
+  --border-banner: 0.5px solid rgb(220, 220, 220);
   --bannerBackgorundColor-White: rgb(255, 255, 255);
   --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
   --boxShadow-Grey: 0 0 8px rgb(73, 73, 73);
   --colorTextButton:color: rgb(173, 68, 68);
-}
+} */
 * {
   margin: 0;
   padding: 0;
@@ -33,9 +36,11 @@
   height: 100vh;
 }
 .img {
+  position: relative;
   background-repeat: no-repeat;
+  top: 100px;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 400px);
 }
 .banner {
   position: fixed;
@@ -45,6 +50,7 @@
   width: 100%;
   font-family: var(--fontMontserrat);
   background-color: var(--bannerBackgorundColor-White);
+  /* border-bottom: var(--border-banner); */
   display: inline-flex;
 }
 .logo {
@@ -53,6 +59,32 @@
   display: inline-flex;
   justify-content: center;
   width: 5%;
+}
+.switch {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: 1vw;
+  /* height: 1vw; */
+  border-radius: 2vw;
+  border: var(--border-banner);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3%;
+  color: var(--fontColorSwitch);
+}
+.fas {
+  align-self: center;
+  transform: scale(0.8);
+  padding: 2px;
+  cursor: pointer;
+}
+/* .dark{
+  display: block;
+} */
+.light {
+  display: none;
 }
 .logo:hover {
   cursor: pointer;
@@ -81,45 +113,50 @@
 .ban:hover {
   color: rgb(179, 96, 96);
 }
-.bigBtn{
+.bigBtn {
   position: absolute;
   /* z-index: 1; */
   top: 50%;
   left: 50%;
-  transform:translate(-50%, -50%) ;
-  width: 15vw;
-  height: 25vw;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  height: 20vw;
   border: var(--border-test);
+  background-color: var(--bannerBackgorundColor-White);
   border-radius: 20px;
 }
-.yachtNice, .sunny{
-  background-color: rgb(243, 241, 145);
+.yachtNice,
+.sunny {
   opacity: 1;
-  top:-5vw;
+  top: -25vw;
   left: 34vw;
   transition: 0.6s;
 }
-.yachtAgly, .cold{
-  background-color: rgb(189, 103, 247);
+.yachtAgly,
+.cold {
   opacity: 1;
-  top:-5vw;
+  top: -25vw;
   left: 65vw;
   transition: 0.6s;
 }
 
-.yachtOn{
-  top:50%;
-  transition: .6s;
+.yachtOn {
+  top: 45%;
+  transition: 0.6s;
 }
-.clearYachtOn{
+.clearYachtOn {
   animation: movebigbtns 0.5s forwards;
 }
 @keyframes movebigbtns {
-  0%{top:50%;}
-  100%{top:50%;
-     left:150%;
-  opacity: 0;}
-  
+  0% {
+    top: 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.3);
+    top: -25%;
+    opacity: 0;
+  }
 }
 /*v tu klasy dla bannera v*/
 .on {
@@ -128,7 +165,7 @@
 }
 .off {
   height: 4vh;
-  font-size: calc(var(--fontSize) / 1.3);
+  /* font-size: calc(var(--fontSize) / 1.3); */
   box-shadow: var(--boxShadow-Grey);
 }
 /*^ tu klasy dla bannera^ */
