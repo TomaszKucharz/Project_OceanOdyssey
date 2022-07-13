@@ -18,6 +18,7 @@ const handleClickYachts = () => {
     }
   });
 };
+
 const handleClickDestination = () => {
   bigBtns.forEach((el) => {
     if (el.classList.contains(`destination`)) {

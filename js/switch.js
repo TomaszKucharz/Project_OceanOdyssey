@@ -4,13 +4,13 @@ const body = document.querySelector(`body`);
 
 const showDark = () => {
   body.setAttribute(`data-mode`, "dark");
-  moon.style.display = "none";
-  sun.style.display = "block";
+  moon.classList.toggle(`lightOff`);
+  sun.classList.toggle(`lightOff`);
 };
-const showLight = (params) => {
+const showLight = () => {
   body.setAttribute(`data-mode`, "light");
-  moon.style.display = "block";
-  sun.style.display = "none";
+  moon.classList.toggle(`lightOff`);
+  sun.classList.toggle(`lightOff`);
 };
 
 sun.addEventListener(`click`, showLight);

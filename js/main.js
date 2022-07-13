@@ -1,4 +1,5 @@
 const banner = document.querySelector(`.banner`);
+const menuBar = document.querySelector(`.menuBar`);
 
 window.addEventListener(`scroll`, function () {
   if (
@@ -9,10 +10,14 @@ window.addEventListener(`scroll`, function () {
   } else {
     banner.className = `banner on`;
   }
-  // if (
-  //   document.body.scrollTop > 1078 ||
-  //   document.documentElement.scrollTop > 1078
-  // ) {
-  //   banner.classList.add("changeColor");
-  // }
+});
+window.addEventListener(`scroll`, function () {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    menuBar.classList.add(`mbOn`);
+  } else {
+    menuBar.classList.remove(`mbOn`);
+  }
 });
