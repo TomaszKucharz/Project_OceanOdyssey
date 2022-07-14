@@ -1,5 +1,6 @@
 const banner = document.querySelector(`.banner`);
 const menuBar = document.querySelector(`.menuBar`);
+const menuLi = document.querySelector(`.menuLi`);
 
 window.addEventListener(`scroll`, function () {
   if (
@@ -21,3 +22,9 @@ window.addEventListener(`scroll`, function () {
     menuBar.classList.remove(`mbOn`);
   }
 });
+
+const showMenu = () => {
+  menuBar.classList.toggle(`moveBar`);
+};
+
+menuLi.addEventListener(`click`, showMenu);

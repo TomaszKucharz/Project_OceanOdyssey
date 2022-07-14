@@ -140,19 +140,37 @@ body {
   box-shadow: var(--boxShadow-Grey);
   background-color: var(--bannerBackgorundColor);
 }
-.yachtNice,
+.yachtNice {
+  background-image: url("../imges/trimaran-2806616_640.jpg");
+}
+.yachtAgly {
+  background-image: url("../imges/yacht-188927_640.jpg");
+}
 .sunny {
+  background-image: url("../imges/mallorca-3543348_640.jpg");
+}
+.cold {
+  background-image: url("../imges/water-1958855_640.jpg");
+}
+
+.yachtNice,
+.sunny,
+.yachtAgly,
+.cold {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   opacity: 1;
   top: -25vw;
-  left: 34vw;
   transition: 0.6s;
+}
+.yachtNice,
+.sunny {
+  left: 34vw;
 }
 .yachtAgly,
 .cold {
-  opacity: 1;
-  top: -25vw;
   left: 65vw;
-  transition: 0.6s;
 }
 
 .yachtOn {
@@ -193,10 +211,17 @@ body {
 .menuBar {
   position: fixed;
   top: 200px;
-  right: 2vw;
+  right: -12vw;
   background-color: var(--menuBackgorundColor);
   width: 10vw;
+  transition: 0.5s;
   /* height: 20vw; */
+}
+.menuBar:hover {
+  cursor: pointer;
+}
+.moveBar {
+  right: 2vw;
 }
 .mbOn {
   box-shadow: var(--boxShadow-Grey);
@@ -212,5 +237,5 @@ body {
 }
 .li {
   margin: 2vh 0;
-  cursor: pointer;
+  /* cursor: pointer; */
 }

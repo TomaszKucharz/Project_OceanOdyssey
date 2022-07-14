@@ -1,10 +1,12 @@
 const yachts = document.querySelector(`.yachts`);
 const destination = document.querySelector(`.destinations`);
-const menuLi = document.querySelector(`.menuLi`);
+const menuB = document.querySelector(`.menuBar`);
+// const lista = document.querySelector(`.lista`);
 const contact = document.querySelector(`.contactForUs`);
 const bigBtns = [...document.querySelectorAll(`.bigBtn`)];
 
 const handleClickYachts = () => {
+  clearList();
   bigBtns.forEach((el) => {
     if (
       el.classList.contains(`destination`) & el.classList.contains(`yachtOn`)
@@ -20,6 +22,7 @@ const handleClickYachts = () => {
 };
 
 const handleClickDestination = () => {
+  clearList();
   bigBtns.forEach((el) => {
     if (el.classList.contains(`destination`)) {
       el.classList.toggle(`yachtOn`);
@@ -27,11 +30,16 @@ const handleClickDestination = () => {
       el.classList.contains(`yacht`) & el.classList.contains(`yachtOn`)
     ) {
       el.classList.add(`clearYachtOn`);
+      // clearList();
       setTimeout(() => {
         el.classList.remove(`yachtOn`, `clearYachtOn`);
       }, 510);
     }
   });
+};
+
+const clearList = () => {
+  menuB.classList.remove(`moveBar`);
 };
 
 yachts.addEventListener(`click`, handleClickYachts);
