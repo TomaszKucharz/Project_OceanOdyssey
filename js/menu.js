@@ -8,6 +8,7 @@ const bigBtns = [...document.querySelectorAll(`.bigBtn`)];
 const handleClickYachts = () => {
   clearList();
   bigBtns.forEach((el) => {
+    const xxx = el.classList.contains;
     if (
       el.classList.contains(`destination`) & el.classList.contains(`yachtOn`)
     ) {

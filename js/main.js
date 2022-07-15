@@ -1,6 +1,7 @@
 const banner = document.querySelector(`.banner`);
 const menuBar = document.querySelector(`.menuBar`);
 const menuLi = document.querySelector(`.menuLi`);
+const bBtns = [...document.querySelectorAll(`.bigBtn`)];
 
 window.addEventListener(`scroll`, function () {
   if (
@@ -24,7 +25,14 @@ window.addEventListener(`scroll`, function () {
 });
 
 const showMenu = () => {
+  clearBbtns();
   menuBar.classList.toggle(`moveBar`);
+};
+
+const clearBbtns = (params) => {
+  bBtns.forEach((el) => {
+    el.classList.remove("yachtOn");
+  });
 };
 
 menuLi.addEventListener(`click`, showMenu);
