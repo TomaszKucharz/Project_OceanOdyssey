@@ -140,6 +140,7 @@ body {
   box-shadow: var(--boxShadow-Grey);
   background-color: var(--bannerBackgorundColor);
 }
+
 .yachtNice {
   background-image: url("../imges/trimaran-2806616_640.jpg");
 }
