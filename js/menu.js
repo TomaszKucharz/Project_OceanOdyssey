@@ -39,7 +39,6 @@ window.addEventListener(`scroll`, function () {
 const handleClickYachts = () => {
 	clearList();
 	bigBtns.forEach((el) => {
-		const xxx = el.classList.contains;
 		if (el.classList.contains(`destination`) & el.classList.contains(`yachtOn`)) {
 			el.classList.add(`clearYachtOn`);
 			setTimeout(() => {
