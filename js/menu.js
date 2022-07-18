@@ -102,10 +102,10 @@ const clearMenu = () => {
   menuB.classList.remove(`moveBar`);
 };
 //-------vv--jump to form$--vv---------------------
-const jumpToForm2 = (params) => {
+const jumpToForm2 = () => {
   window.scrollTo({ top: offsetForm2, behavior: "smooth" });
 };
-const jumpToForm3 = (params) => {
+const jumpToForm3 = () => {
   window.scrollTo({
     top: document.querySelector(`.form3`).offsetTop,
     behavior: "smooth",
