@@ -12,6 +12,11 @@ const yachtNice = document.querySelector(`.yachtNice`);
 const yachtMoto = document.querySelector(`.yachtMoto`);
 const sunny = document.querySelector(`.sunny`);
 const cold = document.querySelector(`.cold`);
+//deklaracja wyjeżdżających pictures w form2 i w form3
+const segmentOne = document.querySelector(`.segmentOne`);
+const segmentTwo = document.querySelector(`.segmentTwo`);
+const segmentThree = document.querySelector(`.segmentThree`);
+const segmentFour = document.querySelector(`.segmentFour`);
 
 //scrole---------vv-----
 window.addEventListener(`scroll`, function () {
@@ -52,6 +57,47 @@ window.addEventListener(`scroll`, function () {
     clearBbtns();
   }
 });
+window.addEventListener(`scroll`, function () {
+  const leftPicture = offsetForm2 / 3;
+  if (
+    document.body.scrollTop > leftPicture ||
+    document.documentElement.scrollTop > leftPicture
+  ) {
+    segmentOne.classList.add(`onLeft`);
+  } else {
+    segmentOne.classList.remove(`onLeft`);
+  }
+  const rightPicture = offsetForm2 / 1.8;
+  if (
+    document.body.scrollTop > rightPicture ||
+    document.documentElement.scrollTop > rightPicture
+  ) {
+    segmentTwo.classList.add(`onRight`);
+  } else {
+    segmentTwo.classList.remove(`onRight`);
+  }
+});
+window.addEventListener(`scroll`, function () {
+  const leftPicture = document.querySelector(`.form3`).offsetTop / 1.2;
+  if (
+    document.body.scrollTop > leftPicture ||
+    document.documentElement.scrollTop > leftPicture
+  ) {
+    segmentFour.classList.add(`onLeft`);
+  } else {
+    segmentFour.classList.remove(`onLeft`);
+  }
+  const rightPicture = document.querySelector(`.form3`).offsetTop / 1.8;
+  if (
+    document.body.scrollTop > rightPicture ||
+    document.documentElement.scrollTop > rightPicture
+  ) {
+    segmentThree.classList.add(`onRight`);
+  } else {
+    segmentThree.classList.remove(`onRight`);
+  }
+});
+
 //scrole---------^^-----
 const handleClickYachts = () => {
   clearList();
