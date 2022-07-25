@@ -1,227 +1,227 @@
-[data-mode='light'] {
-	--arrowBackgorund: rgb(220, 220, 220);
-	--mainBackgorundColor: rgb(255, 255, 255);
-	--fontDancing-Script: 'Dancing Script', sans-serif;
-	--fontMontserrat: 'Montserrat', sans-serif;
-	--fontRoboto: 'Roboto', sans-serif;
-	--fontSize: 2vh;
-	--fontColorBigzBtn: rgb(90, 90, 90);
-	--fontColorBanner: rgb(116, 116, 116);
-	--fontColorBannerHover: #bc6060;
-	--fontColorSwitchHover: #ffea02;
-	--fontColorSwitch: rgb(220, 220, 220);
-	--border-test: 0.5px dotted rgb(255, 8, 0);
-	--border-banner: 0.5px solid rgb(220, 220, 220);
-	--border-switch: 0.5px solid rgb(105, 105, 105);
-	--bannerBackgorundColor: rgb(255, 255, 255);
-	--menuBackgorundColor: rgba(255, 255, 255, 0.644);
-	--bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
-	--boxShadow-Grey: 0 0 8px rgb(73, 73, 73);
-	--backgroundForm4: rgb(7, 14, 77);
+[data-mode="light"] {
+  --arrowBackgorund: rgb(220, 220, 220);
+  --mainBackgorundColor: rgb(255, 255, 255);
+  --fontDancing-Script: "Dancing Script", sans-serif;
+  --fontMontserrat: "Montserrat", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+  --fontSize: 2vh;
+  --fontColorBigzBtn: rgb(90, 90, 90);
+  --fontColorBanner: rgb(116, 116, 116);
+  --fontColorBannerHover: #bc6060;
+  --fontColorSwitchHover: #ffea02;
+  --fontColorSwitch: rgb(220, 220, 220);
+  --border-test: 0.5px dotted rgb(255, 8, 0);
+  --border-banner: 0.5px solid rgb(220, 220, 220);
+  --border-switch: 0.5px solid rgb(105, 105, 105);
+  --bannerBackgorundColor: rgb(255, 255, 255);
+  --menuBackgorundColor: rgba(255, 255, 255, 0.644);
+  --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
+  --boxShadow-Grey: 0 0 8px rgb(73, 73, 73);
+  --backgroundForm4: rgb(7, 14, 77);
 }
-[data-mode='dark'] {
-	--arrowBackgorund: rgb(71, 71, 71);
-	--mainBackgorundColor: rgb(0, 0, 0);
-	--fontDancing-Script: 'Dancing Script', sans-serif;
-	--fontMontserrat: 'Montserrat', sans-serif;
-	--fontRoboto: 'Roboto', sans-serif;
-	--fontSize: 2vh;
-	--fontColorBigzBtn: rgb(90, 90, 90);
-	--fontColorBanner: rgb(216, 216, 216);
-	--fontColorBannerHover: #bc6060;
-	--fontColorSwitchHover: #ffea02;
-	--fontColorSwitch: rgb(220, 220, 220);
-	--border-test: 0.5px dotted rgb(255, 8, 0);
-	--border-banner: 0.5px solid rgb(220, 220, 220);
-	--border-switch: 0.5px solid rgb(210, 210, 210);
-	--bannerBackgorundColor: rgb(0, 0, 0);
-	--menuBackgorundColor: rgba(0, 0, 0, 0.644);
-	--bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
-	--boxShadow-Grey: 0 0 8px rgb(153, 56, 56);
-	--backgroundForm4: rgb(7, 14, 77);
+[data-mode="dark"] {
+  --arrowBackgorund: rgb(71, 71, 71);
+  --mainBackgorundColor: rgb(0, 0, 0);
+  --fontDancing-Script: "Dancing Script", sans-serif;
+  --fontMontserrat: "Montserrat", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+  --fontSize: 2vh;
+  --fontColorBigzBtn: rgb(90, 90, 90);
+  --fontColorBanner: rgb(216, 216, 216);
+  --fontColorBannerHover: #bc6060;
+  --fontColorSwitchHover: #ffea02;
+  --fontColorSwitch: rgb(220, 220, 220);
+  --border-test: 0.5px dotted rgb(255, 8, 0);
+  --border-banner: 0.5px solid rgb(220, 220, 220);
+  --border-switch: 0.5px solid rgb(210, 210, 210);
+  --bannerBackgorundColor: rgb(0, 0, 0);
+  --menuBackgorundColor: rgba(0, 0, 0, 0.644);
+  --bannerBackgorundColor-Blue: rgba(227, 252, 255, 0.644);
+  --boxShadow-Grey: 0 0 8px rgb(153, 56, 56);
+  --backgroundForm4: rgb(7, 14, 77);
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	background-color: var(--mainBackgorundColor);
+  background-color: var(--mainBackgorundColor);
 }
 .wrapper {
-	margin: 0 auto;
-	max-width: 1820px;
-	height: 400vh;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: flex-start;
-	overflow-x: hidden;
-	/* border: var(--border-test); */
+  margin: 0 auto;
+  max-width: 1820px;
+  height: 400vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: hidden;
+  /* border: var(--border-test); */
 }
 .form {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 .img {
-	position: relative;
-	background-repeat: no-repeat;
-	top: 100px;
-	width: 100%;
-	height: calc(100vh - 250px);
+  position: relative;
+  background-repeat: no-repeat;
+  top: 100px;
+  width: 100%;
+  height: calc(100vh - 250px);
 }
 .banner {
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	left: 0;
-	width: 100%;
-	font-family: var(--fontMontserrat);
-	font-size: var(--fontSize);
-	background-color: var(--bannerBackgorundColor);
-	/* border-bottom: var(--border-banner); */
-	display: inline-flex;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: var(--fontMontserrat);
+  font-size: var(--fontSize);
+  background-color: var(--bannerBackgorundColor);
+  /* border-bottom: var(--border-banner); */
+  display: inline-flex;
 }
 .logo {
-	margin-left: 5vh;
-	border: var(--border-test);
-	display: inline-flex;
-	justify-content: center;
-	width: 5%;
+  margin-left: 5vh;
+  border: var(--border-test);
+  display: inline-flex;
+  justify-content: center;
+  width: 5%;
 }
 .switch {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	margin-left: 1vw;
-	/* height: 1vw; */
-	border-radius: 2vw;
-	border: var(--border-switch);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 2%;
-	color: var(--fontColorBanner);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: 1vw;
+  /* height: 1vw; */
+  border-radius: 2vw;
+  border: var(--border-switch);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2%;
+  color: var(--fontColorBanner);
 }
 .fas {
-	position: relative;
-	transform: scale(0.8);
-	padding: 2px;
-	cursor: pointer;
+  position: relative;
+  transform: scale(0.8);
+  padding: 2px;
+  cursor: pointer;
 }
 .fas:hover {
-	color: var(--fontColorSwitchHover);
+  color: var(--fontColorSwitchHover);
 }
 .logo:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 .logo img {
-	transform: scale(0.5);
+  transform: scale(0.5);
 }
 .rightButtons {
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
 }
 /*  */
 .ban {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	padding: 0 40px;
-	margin: 0 3vh;
-	color: var(--fontColorBanner);
-	/* border: var(--border-test); */
-	cursor: pointer;
-	transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 0 40px;
+  margin: 0 3vh;
+  color: var(--fontColorBanner);
+  /* border: var(--border-test); */
+  cursor: pointer;
+  transition: 0.1s;
 }
 .ban:hover {
-	color: var(--fontColorBannerHover);
+  color: var(--fontColorBannerHover);
 }
 .bigBtn {
-	position: absolute;
-	/* z-index: 1; */
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 12vw;
-	height: 16vw;
-	box-shadow: var(--boxShadow-Grey);
-	background-color: var(--bannerBackgorundColor);
+  position: absolute;
+  /* z-index: 1; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  height: 16vw;
+  box-shadow: var(--boxShadow-Grey);
+  background-color: var(--bannerBackgorundColor);
 }
 .bigBtn p {
-	color: var(--fontColorBigzBtn);
+  color: var(--fontColorBigzBtn);
 }
 
 .yachtNice {
-	background-image: url('../imges/trimaran-2806616_640.jpg');
+  background-image: url("../imges/trimaran-2806616_640.jpg");
 }
 .yachtMoto {
-	background-image: url('../imges/yacht-188927_640.jpg');
+  background-image: url("../imges/yacht-188927_640.jpg");
 }
 .sunny {
-	background-image: url('../imges/mallorca-3543348_640.jpg');
+  background-image: url("../imges/mallorca-3543348_640.jpg");
 }
 .cold {
-	background-image: url('../imges/water-1958855_640.jpg');
+  background-image: url("../imges/water-1958855_640.jpg");
 }
 
 .yachtNice,
 .sunny,
 .yachtMoto,
 .cold {
-	background-position: center;
-	background-size: 12vw 16.5vw;
-	background-repeat: no-repeat;
-	opacity: 1;
-	top: -25vw;
-	transition: 0.6s;
-	text-align: center;
-	font-size: calc(var(--fontSize) * 1.2);
-	cursor: pointer;
+  background-position: center;
+  background-size: 12vw 16.5vw;
+  background-repeat: no-repeat;
+  opacity: 1;
+  top: -25vw;
+  transition: 0.6s;
+  text-align: center;
+  font-size: calc(var(--fontSize) * 1.2);
+  cursor: pointer;
 }
 .yachtNice,
 .sunny {
-	left: 34vw;
+  left: 34vw;
 }
 .yachtMoto,
 .cold {
-	left: 65vw;
+  left: 65vw;
 }
 
 .yachtOn {
-	top: 45%;
-	transition: 0.6s;
+  top: 45%;
+  transition: 0.6s;
 }
 .clearYachtOn {
-	animation: movebigbtns 0.5s forwards;
+  animation: movebigbtns 0.5s forwards;
 }
 @keyframes movebigbtns {
-	0% {
-		top: 50%;
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(720deg) scale(0.3);
-		top: -25%;
-		opacity: 0;
-	}
+  0% {
+    top: 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.3);
+    top: -25%;
+    opacity: 0;
+  }
 }
 /*v tu klasy dla bannera v*/
 .on {
-	height: 6vh;
+  height: 6vh;
 }
 .off {
-	padding: 10px;
-	/* height: 6vh; */
-	box-shadow: var(--boxShadow-Grey);
+  padding: 10px;
+  /* height: 6vh; */
+  box-shadow: var(--boxShadow-Grey);
 }
 .lightOff {
-	display: none;
+  display: none;
 }
 /*^ tu klasy dla bannera^ */
 
@@ -229,125 +229,127 @@ body {
   background-color: var(--bannerBackgorundColor-Blue);
 } */
 .menuBar {
-	z-index: 2;
-	position: fixed;
-	top: 200px;
-	right: -8vw;
-	opacity: 0;
-	background-color: var(--menuBackgorundColor);
-	width: 220px;
-	transition: 0.5s;
-	/* height: 20vw; */
+  z-index: 2;
+  position: fixed;
+  top: 200px;
+  right: -8vw;
+  opacity: 0;
+  background-color: var(--menuBackgorundColor);
+  width: 220px;
+  transition: 0.5s;
+  /* height: 20vw; */
 }
 .menuBar:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 .moveBar {
-	opacity: 1;
-	right: 10vw;
+  opacity: 1;
+  right: 10vw;
 }
 .mbOn {
-	box-shadow: var(--boxShadow-Grey);
+  box-shadow: var(--boxShadow-Grey);
 }
 .lista {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: var(--fontSize);
-	font-family: var(--fontRoboto);
-	color: var(--fontColorBanner);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fontSize);
+  font-family: var(--fontRoboto);
+  color: var(--fontColorBanner);
 }
 .li {
-	margin: 2vh 0;
-	/* cursor: pointer; */
+  margin: 2vh 0;
+  /* cursor: pointer; */
 }
 .form2 {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	/* border: var(--border-test); */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* border: var(--border-test); */
 }
 .form3 {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	/* border: var(--border-test); */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* border: var(--border-test); */
 }
 .segment {
-	position: absolute;
-	width: 45vw;
-	height: 18vw;
-	left: 50%;
-	border: var(--border-test);
-	transition: 0.8s;
-	display: flex;
-	flex-direction: row;
+  position: absolute;
+  width: 45vw;
+  height: 18vw;
+  left: 50%;
+  /* border: var(--border-test); */
+  transition: 0.8s;
+  display: flex;
+  flex-direction: row;
 }
 .segment2 {
-	position: absolute;
-	width: 45vw;
-	height: 18vw;
-	left: 50%;
-	border: var(--border-test);
-	transition: 0.8s;
-	display: flex;
-	flex-direction: row;
+  position: absolute;
+  width: 45vw;
+  height: 18vw;
+  left: 50%;
+  /* border: var(--border-test); */
+  transition: 0.8s;
+  display: flex;
+  flex-direction: row;
 }
 .segmentOne {
-	top: 30%;
-	left: calc(50% - 75vw);
-	transform: translate(-50%, -50%);
+  top: 30%;
+  left: calc(50% - 75vw);
+  transform: translate(-50%, -50%);
 }
 .segmentTwo {
-	top: 75%;
-	left: calc(50% + 75vw);
-	transform: translate(-50%, -50%);
+  top: 75%;
+  left: calc(50% + 75vw);
+  transform: translate(-50%, -50%);
 }
 .segmentThree {
-	top: 30%;
-	left: calc(50% + 75vw);
-	transform: translate(-50%, -50%);
+  top: 30%;
+  left: calc(50% + 75vw);
+  transform: translate(-50%, -50%);
 }
 .segmentFour {
-	top: 75%;
-	left: calc(50% - 75vw);
-	transform: translate(-50%, -50%);
+  top: 75%;
+  left: calc(50% - 75vw);
+  transform: translate(-50%, -50%);
 }
 .pictures {
-	width: 12vw;
-	height: 18vw;
-	border: var(--border-test);
-	display: flex;
-	flex-direction: row;
+  width: 12vw;
+  height: 18vw;
+  border: var(--border-test);
+  display: flex;
+  flex-direction: row;
 }
 .picText {
-	margin: 2vh;
-	width: 100%;
+  margin: 2vh;
+  width: 100%;
+  text-align: center;
+  margin: 5vh 2vh;
 }
 /* .pic1txt {
 } */
 .picture1 {
-	justify-self: auto;
-	/* top: 30%;
+  justify-self: auto;
+  /* top: 30%;
   left: calc(50% - 65vw); */
 }
 /* .pic2txt {
 } */
 .picture2 {
-	justify-self: auto;
-	/* top: 70%;
+  justify-self: auto;
+  /* top: 70%;
   left: calc(50% + 65vw); */
 }
 .onLeft {
-	left: calc(50% - 5vw);
+  left: calc(50% - 5vw);
 }
 .onRight {
-	left: calc(50% + 5vw);
+  left: calc(50% + 5vw);
 }
 /* .form3 {
   position: relative;
@@ -370,41 +372,41 @@ body {
 } */
 
 .form4 {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 .blue {
-	position: relative;
-	top: 40vh;
-	right: 0;
-	width: 100%;
-	height: 60vh;
-	background-color: var(--backgroundForm4);
+  position: relative;
+  top: 40vh;
+  right: 0;
+  width: 100%;
+  height: 60vh;
+  background-color: var(--backgroundForm4);
 }
 .back {
-	position: fixed;
-	top: 80vh;
-	right: 10vh;
-	width: 80px;
-	height: 80px;
-	background-color: var(--arrowBackgorund);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	cursor: pointer;
+  position: fixed;
+  top: 80vh;
+  right: 10vh;
+  width: 80px;
+  height: 80px;
+  background-color: var(--arrowBackgorund);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
 }
 .arrow {
-	transform: scale(1.1);
-	cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .arrow,
 p {
-	color: var(--fontColorBanner);
+  color: var(--fontColorBanner);
 }
 p {
-	font-family: var(--fontMontserrat);
+  font-family: var(--fontMontserrat);
 }

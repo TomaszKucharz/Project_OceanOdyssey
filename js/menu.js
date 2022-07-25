@@ -1,3 +1,4 @@
+"use strict";
 const yachts = document.querySelector(`.yachts`);
 const destination = document.querySelector(`.destinations`);
 const menuB = document.querySelector(`.menuBar`);
@@ -148,8 +149,9 @@ const clearMenu = () => {
   menuB.classList.remove(`moveBar`);
 };
 //-------vv--jump to form$--vv---------------------
-const jumpToForm2 = () => {
-  window.scrollTo({ top: offsetForm2, behavior: "smooth" });
+const jumpToForm2 = (el) => {
+  const jumpToPosition = offsetForm2 / el;
+  window.scrollTo({ top: jumpToPosition, behavior: "smooth" });
 };
 const jumpToForm3 = () => {
   window.scrollTo({
@@ -171,10 +173,10 @@ const showMenu = () => {
   menuB.classList.toggle(`moveBar`);
 };
 const showYachtNice = () => {
-  jumpToForm2();
+  jumpToForm2(2);
 };
 const showYachtMoto = () => {
-  jumpToForm2();
+  jumpToForm2(1);
 };
 const showSunny = () => {
   jumpToForm3();
@@ -182,6 +184,7 @@ const showSunny = () => {
 const showCold = () => {
   jumpToForm3();
 };
+
 //--------------^^--show actions of buttons--^^------------------
 
 yachts.addEventListener(`click`, handleClickYachts);
